@@ -91,6 +91,11 @@ img.grayscale {
   background-color:#d46255;
 }
 
+.nav>li>a:hover, .nav>li>a:focus{
+	background-color:rgba(18,11,20,0.77) !important;
+
+}
+
 .navbar-bold {
   background-color:#f68076;
   font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;

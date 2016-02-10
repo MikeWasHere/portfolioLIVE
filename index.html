@@ -5,12 +5,20 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/animate.css"> 
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />   
+<<<<<<< HEAD
 	    <link href='http://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
 	    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,900' rel='stylesheet' type='text/css'>
 	    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400' rel='stylesheet' type='text/css'>	
 	    <link rel="stylesheet" type="text/css" href="css/style.css"> 
 
 	    </header>
+=======
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <link href='http://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400' rel='stylesheet' type='text/css'>	
+  </header>
+>>>>>>> master
 	
 	<style>
 	.modal-backdrop{
@@ -21,33 +29,9 @@
 	padding-bottom: 0;
 	}
 	
-	
 	</style>
 	
-	<body>
-<!--
-	
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid" id="navbar">
-  	  <div class="navbar-header">
-    	<ul class="nav navbar-nav" >
-		    {% if not session.logged %}
-		    <li><a href="#" >Home</a></li>
-		    <li><a class="page-scroll" href="#sec1" >About</a></li>
-		    <li><a href="#" >Projects</a></li>
-		    <li><a data-toggle="modal" data-target="#myModal">process</a></li>
-	        <li><a href="#" data-toggle="modal" data-target="#myModal2" >Contact us</a></li>
-	        {% else %}
-	        <li><a class="page-scroll" href="#sec1" >About</a></li>
-	        <li><a href="/upload" >Update users</a></li>
-			<li><a type="submit" >Logout</a></li>        
-	        {% endif %}
-    	</ul>
-  	  </div>
-  </div>
-</nav>
--->
-
+<body>
 <nav>	
 	<div class="navbar navbar-fixed-top alt" data-spy="affix" data-offset-top="1000">
 	  <div class="container">
@@ -82,100 +66,48 @@
       <p class="hi wow fadeInUp" data-wow-delay="1s">and I make awesome web stuff.</p>
       <div>&nbsp;</div>
    	</div>
-      <!-- Small modal -->
-<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Sign in</button> -->
-
 
       <a class="btn btn-default btn-lg wow tada" data-wow-delay="1.5s" id="getStarted" href="#sec3">My Stuff</a>
-      <!-- Modal -->
-
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Login user</h4>
-      </div>
-      
-      
-       <div class="modal-body">
-
-	
-	<form enctype="multipart/form-data" action="/processForm" method="POST">
-		<ul>
-		<li class="width">
-			<label for="username" class="label_text">User Name: </label>
-            <input type="text" name="username" class="label_text"/> </br>
-        </li>
-        
-        <li class="width">  
-            <label for="password" class="label_text">Password: </label>
-            <input type="text" name="password" id="password" class="label_text" /> </br>
-        </li>
-        
-        <li class="width">
-            <label for="state" class="label_text">State: </label>
-            <input type="text" name="state" class="label_text"/> </br>
-        </li>
-            
-        <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal" id="close">Close</button>
-            <button type="submit" name="submit" value="Login" class="btn btn-danger ">Login</button>
-        </div>   
-            
-	</form>
-	
-</div>
-      
-      
-    </div>
-  </div>
-</div>
 
   </div>
 </div>
 
-
-
-
+<!-- Modal -->
 <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" id="contact">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" id="xMarks" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         <h1 class="modal-title text-center" id="myModalLabel">Contact Me</h1>
-                <hr class="half-line-red modalHead-line">
+            <hr class="half-line-red modalHead-line">
       </div>
       
       
-       <div class="modal-body row">
-	       
-	   <form enctype="multipart/form-data" action="/addUser" id="register" method="POST">
+  <div class="modal-body row">       
+    <form enctype="multipart/form-data" action="/addUser" id="register" method="POST">
+    <div class="col-md-6" id="verticle-line"> 
+    <h3>General Info</h3>
+      <div class="row">
+      <div class="col-xs-6">
+        <input type="text" name="firstname" class="form-control reg" placeholder="First Name"/> <br>
+      </div>
 
-	   <div class="col-md-6" id="verticle-line"> 
-	   <h3>General Info</h3>
-	   		<div class="row">
-	   		
-				  <div class="col-xs-6">
-		            <input type="text" name="firstname" class="form-control reg" placeholder="First Name"/> <br>
-		          </div>
-		        
-		          <div class="col-xs-6">  
-		            <input type="text" name="lastname"  class="form-control reg" placeholder="Last name" /> 
-		          </div>
-		     </div>
-	     
-	     
-		     <div class="row">
-				  <div class="col-xs-6">
-		            <input type="text" name="email" class="form-control reg" placeholder="Email Address"/> 
-		          </div>
-		        
-		          <div class="col-xs-6">  
-		            <input type="text" name="Phone-number" class="form-control reg" placeholder="Phone #" /> 
-		          </div>
-		     </div>
-       </div>
+      <div class="col-xs-6">  
+        <input type="text" name="lastname"  class="form-control reg" placeholder="Last name" /> 
+      </div>
+      </div>
+
+
+      <div class="row">
+      <div class="col-xs-6">
+            <input type="text" name="email" class="form-control reg" placeholder="Email Address"/> 
+          </div>
+        
+          <div class="col-xs-6">  
+            <input type="text" name="Phone-number" class="form-control reg" placeholder="Phone #" /> 
+          </div>
+      </div>
+     </div>
         
         <div class="col-md-6">
         <h3>Project Info</h3>
@@ -184,13 +116,13 @@
 		            <input type="text" name="type-of-project" class="form-control reg" placeholder="type of project"/> <br>
 		          </div>
 		        
-		          <li class="col-xs-6">  
+		          <li class="col-xs-6 noListStyle">  
 		            <input type="text" name="budget" class="form-control reg" placeholder="budget" /> 
 		          </li>
 		     </div>
 	        
 	        <div class="row">
-		          <li class="col-xs-12">  
+		          <li class="col-xs-12 noListStyle">  
 		            <textarea type="text" row="1" name="summarize" id="summarize" class="form-control reg" placeholder="Summarize Your Project"></textarea> 
 		          </li>
 		       </ul>
@@ -212,27 +144,24 @@
   </div>
 </div>
 
-
-
-
 <hr>
 
 <div id="sec1" class="blurb post__article">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 post_article">
+      <div class="col-md-6 col-sm-12 post_article">
         <h1 class="wow fadeInDown">Who I am</h1>
         <p class="lead wow fadeInLeft">Web Designer & Developer</p>
         <hr class="half-line-red wow fadeInLeft">
         <p class="wow fadeInUp">	Hey There, As you can tell i'm Michael Perez and i am a Web Designer and Developer. I've been in the business for quite some time now and i enjoy every minute of it. You need any projects that need some work? <a href="#" data-toggle="modal" data-target="#myModal2" style="color: #c71722;">Contact me</a> and lets see if we can bring your ideas to life!<p>
       </div>
 
+<<<<<<< HEAD
       <img src="images/297480_10150910871820595_1852264307_n.jpg" id="mike" class="img-circle col-md-6 wow fadeInRight">
+=======
+      <img src="images/297480_10150910871820595_1852264307_n.jpg" class="img-circle col-md-6 col-sm-12 elPic wow fadeInRight" >
+>>>>>>> master
 
-      
-      <div class="col-md-5">
-        <h1 class="pull-right"><i class="icon-mobile-phone icon-3x"></i> <i class="icon-tablet icon-3x"></i> <i class="icon-laptop icon-3x"></i></h1>
-      </div>
     </div>
   </div>
 </div>
@@ -275,56 +204,54 @@
 
 <div class="callout" id="sec3">
   <div class="vert">
-    <div class="col-md-12 text-center wow fadeInRight"><h1>Projects I've Worked On</h1></div>
-            <hr class="half-line-red wow fadeInRight">
+    <div class="col-md-12 text-center wow fadeInRight">
+      <h1>Projects I've Worked On</h1>
+    </div>
+
+    <hr class="half-line-red wow fadeInRight">
+
+    <div class="row">
     <div class="col-md-12 text-center">&nbsp;</div>
-    <div class="col-md-6">
-      	<h2 id="proOne" class="pull-left proName wow fadeInLeft">Project One</h2>
-      	<ul class="facts wow fadeInLeft">
+    <div class="col-md-6 col-sm-12">
+      	<h2 id="proOne" class="proName wow fadeInLeft col-md-12">Project One</h2>
+      	<ul class="facts wow fadeInLeft col-md-12 ">
 	      	<li >System: CRUD</li>
 	      	<li >Role: Designer & Developer</li>
 	      	<li >Platform: Web</li>
       	</ul>
       	<p class="proDesc wow fadeInLeft">This site is a simple mock up template that i used to implement login in function through a modal. You cannot login and see the results page without the proper credentials. </p>
     </div>
-<div class="col-md-6">    
-	<img src="http://i.imgur.com/oqVqsFa.png" class="web wow fadeInRight" width="650" height="475">
+
+<div class="col-md-6 col-sm-12">    
+	<img src="http://i.imgur.com/oqVqsFa.png" class="web wow fadeInRight elPic" >
+</div>
 </div>
 
+<div class="row">
 <div class="col-md-6 proTwo pull-right">
-      	<h2 class="pull-left proName wow fadeInRight">Project Two</h2>
-      	<ul class="facts wow fadeInRight">
-	      	<li >System: CRUD</li>
-	      	<li >Role: Designer & Developer</li>
-	      	<li >Platform: Web</li>
-      	</ul>
-      	<p class="proDesc wow fadeInRight">Wheres My Bus is a website that gives you real time information displayed on a map for the specific bus you searched for. Gives you the option of signing in with your social networking profiles.</p>
-    </div>
+    <h2 class="proName wow fadeInRight col-md-12">Project Two</h2>
+    <ul class="facts wow fadeInRight col-md-12">
+    	<li >System: CRUD</li>
+    	<li >Role: Designer & Developer</li>
+    	<li >Platform: Web</li>
+    </ul>
+    <p class="proDesc wow fadeInRight">Wheres My Bus is a website that gives you real time information displayed on a map for the specific bus you searched for. Gives you the option of signing in with your social networking profiles.</p>
+</div>
     
 <div class="col-md-6 proTwo pull-left wow fadeInLeft">    
-	<img src="http://i.imgur.com/31feSIJ.png" class="web" width="650" height="475">
-</div>
-
+	<img src="http://i.imgur.com/31feSIJ.png" class="web elPic">
 </div>
 </div>
 
+</div>
+</div>
 
 
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3 text-center">
-        <ul class="list-inline">
-          <li><i class="icon-facebook icon-2x"></i></li>
-          <li><i class="icon-twitter icon-2x"></i></li>
-          <li><i class="icon-google-plus icon-2x"></i></li>
-          <li><i class="icon-pinterest icon-2x"></i></li>
-        </ul>
-        <hr>
-        <br><h3>Michael Perez ©2015</h3>
-      </div>
-    </div>
-  </div>
+
+<footer class="row">
+  <hr>
+  <br>
+  <h3 class="col-md-12 col-sm-12">Michael Perez &copy;2016</h3>
 </footer>
 
 	</body>
@@ -335,6 +262,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
     <script src="js/wow.js"></script>
+    <script type="text/javascript" src= "js/jquery.lettering.js"></script>
     
     <script>
 	$(function() {
@@ -353,7 +281,7 @@
 });
     </script>
     
-    <script>
+<script>
  new WOW().init();
 </script>
     
@@ -365,7 +293,5 @@
     $('.popoverbutton').popover();
     $('#myModal').modal(options);
  </script>
- 
-	<script type="text/javascript" src= "js/jquery.lettering.js"></script>
 
 </html>

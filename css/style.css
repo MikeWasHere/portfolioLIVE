@@ -283,16 +283,6 @@ label{
 	width: 70%;
 }
 
-@media only screen and (max-width: 700px) {
-    #contact {
-        width: 95%;
-    }
-
-    #sub {
-    	margin-left: 0%;
-    }
-}
-
 #sub{
 	margin: 5%;
 	margin-left: 39%;
@@ -458,3 +448,25 @@ footer{
 	text-align: center;
 }
 /*--- RESULTS PAGE END ---*/
+
+@media only screen and (max-width: 700px) {
+    #contact {
+    width: 95%;
+    }
+
+    #sub{
+	margin: 0%;
+    }
+
+    .reg{
+	font-size: 2em;
+	height: 70px;
+	margin-bottom: 5%;
+	border: 2px #920f18 solid;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	}
+
+	.pushDown{
+		margin-bottom: 10%;
+	}
+}

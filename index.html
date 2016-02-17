@@ -79,49 +79,50 @@
     <div class="col-md-6" id="verticle-line"> 
     <h3>General Info</h3>
       <div class="row">
-      <div class="col-xs-6">
+      <div class="col-md-6 col-sm-12">
         <input type="text" name="firstname" class="form-control reg" placeholder="First Name"/> <br>
       </div>
 
-      <div class="col-xs-6">  
+      <div class="col-md-6 col-sm-12">  
         <input type="text" name="lastname"  class="form-control reg" placeholder="Last name" /> 
       </div>
       </div>
 
 
       <div class="row">
-      <div class="col-xs-6">
+      <div class="col-md-6 col-sm-12">
             <input type="text" name="email" class="form-control reg" placeholder="Email Address"/> 
           </div>
         
-          <div class="col-xs-6">  
+          <div class="col-md-6 col-sm-12">  
             <input type="text" name="Phone-number" class="form-control reg" placeholder="Phone #" /> 
           </div>
       </div>
      </div>
         
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-12">
         <h3>Project Info</h3>
 		     <div class="row">
-				  <div class="col-xs-6">
+				  <div class="col-md-6 col-sm-12">
 		            <input type="text" name="type-of-project" class="form-control reg" placeholder="type of project"/> <br>
 		          </div>
 		        
-		          <li class="col-xs-6 noListStyle">  
+		          <li class="col-md-6 col-sm-12 noListStyle">  
 		            <input type="text" name="budget" class="form-control reg" placeholder="budget" /> 
 		          </li>
 		     </div>
 	        
 	        <div class="row">
-		          <li class="col-xs-12 noListStyle">  
+		          <li class="col-md-12 noListStyle">  
 		            <textarea type="text" row="1" name="summarize" id="summarize" class="form-control reg" placeholder="Summarize Your Project"></textarea> 
 		          </li>
-		       </ul>
 		    </div>	    
       
 		</div>
-        
-	<input id="sub" class="btn btn-default" type="submit"/>
+  
+  <div class="row">
+    <input id="sub" class="btn btn-default col-md-4 col-xs-12" type="submit"/>
+  </div>
 </form>
 
 	
@@ -163,21 +164,23 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4 text-center">
+      <div class="col-md-4 text-center pushDown">
         <div class="featurette-item">
           <img src="images/1430366424_handdrawn-pencil-128.png" class="img-circle proPic wow bounceIn" data-wow-delay="1s" height="152" width="152"/>
           <h2 class="wow fadeInDown">sketch it up</h2>
           <p class="wow fadeInUp">We meet and you tell me what your ideas are. I sketch up a rough draft that we both agree upon then i start the next phase</p>
         </div>
       </div>
-      <div class="col-md-4 text-center">
+
+      <div class="col-md-4 text-center pushDown">
         <div class="featurette-item">
           <img src="images/1430367304_colors.png" class="img-circle wow bounceIn" data-wow-delay="1s" height="152" width="152"/>
           <h2 class="wow fadeInDown">Photoshop magic</h2>
           <p class="wow fadeInUp">I add all the design, colors, and everything else we talked about and make a PSD of what the site will look like. If you like, then i start coding! </p>
         </div>
       </div>
-      <div class="col-md-4 text-center">
+
+      <div class="col-md-4 text-center pushDown">
         <div class="featurette-item">
           <img src="images/1430367942_browser.png" class="img-circle wow bounceIn" data-wow-delay="1s" height="152" width="152"/>
           <h2 class="wow fadeInDown">Code It, and launch!</h2>
@@ -200,11 +203,13 @@
     <div class="row">
     <div class="col-md-12 text-center">&nbsp;</div>
     <div class="col-md-6 col-sm-12">
-      	<h2 id="proOne" class="proName wow fadeInLeft col-md-12">Project One</h2>
+      	<h2 id="proOne" class="proName wow fadeInLeft col-md-12">Login php</h2>
       	<ul class="facts wow fadeInLeft col-md-12 ">
-	      	<li >System: CRUD</li>
-	      	<li >Role: Designer & Developer</li>
-	      	<li >Platform: Web</li>
+	      	<li><b>System:</b> CRUD</li>
+          <li><b>Language used:</b> PHP</li>
+          <li><b>Frameworks used:</b> Bootstrap, Codeigniter</li>
+	      	<li><b>Role:</b> Designer & Developer</li>
+	      	<li><b>Platform:</b> Web</li>
       	</ul>
       	<p class="proDesc wow fadeInLeft">This site is a simple mock up template that i used to implement login in function through a modal. You cannot login and see the results page without the proper credentials. </p>
     </div>
@@ -216,11 +221,13 @@
 
 <div class="row">
 <div class="col-md-6 proTwo pull-right">
-    <h2 class="proName wow fadeInRight col-md-12">Project Two</h2>
+    <h2 class="proName wow fadeInRight col-md-12">Wheres my bus</h2>
     <ul class="facts wow fadeInRight col-md-12">
-    	<li >System: CRUD</li>
-    	<li >Role: Designer & Developer</li>
-    	<li >Platform: Web</li>
+    	<li><b>System:</b> CRUD</li>
+      <li><b>Language used:</b> PHP</li>
+      <li><b>Frameworks used:</b> Bootstrap</li>
+    	<li><b>Role:</b> Designer & Developer</li>
+    	<li><b>Platform:</b> Web</li>
     </ul>
     <p class="proDesc wow fadeInRight">Wheres My Bus is a website that gives you real time information displayed on a map for the specific bus you searched for. Gives you the option of signing in with your social networking profiles.</p>
 </div>

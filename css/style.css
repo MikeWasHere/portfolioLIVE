@@ -476,3 +476,9 @@ footer{
 		margin-bottom: 10%;
 	}
 }
+
+@media only screen and (max-width: 376px) {
+	.vert {
+		padding-top: 8%;
+	}
+}

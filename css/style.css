@@ -243,6 +243,8 @@ footer {
 	opacity: 1;
 	text-shadow: none;
 	color: white;
+    z-index: 2;
+    position: relative;
 }
 
 
@@ -477,7 +479,7 @@ footer{
 	}
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 375px) {
 	.vert {
 		padding-top: 8%;
 	}

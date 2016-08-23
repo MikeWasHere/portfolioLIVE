@@ -63,6 +63,8 @@ img.grayscale {
   width:100%;
   padding-top:4%;
   text-align:center;
+  overflow: auto;
+  padding-bottom: 50px;
 }
 
 .header .btn-lg {
@@ -120,7 +122,6 @@ img.grayscale {
 }
 
 .header {
-  height: 80%;
   background: #920f18 url('http://i.imgur.com/ied4fnh.png') repeat center center fixed;
 }
 

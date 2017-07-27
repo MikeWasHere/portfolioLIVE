@@ -442,6 +442,9 @@ form h3{
 
 .elPic{
 	max-width: 100%;
+}
+
+.img-container > .elPic {
 	border-bottom-right-radius: 10px;
   	border-bottom-left-radius: 10px;
 }

@@ -624,6 +624,10 @@ div.browser > span.url-bar {
 footer{
 	text-align: center;
 }
+
+.navbar-toggle > .icon-bar {
+	background-color: white;
+}
 /*--- RESULTS PAGE END ---*/
 
 @media only screen and (max-width: 991px) {
